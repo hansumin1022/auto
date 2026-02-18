@@ -16,8 +16,3 @@
   - HW (SolidWorks, Ansys) -> 기계요소설계, FEM, CAD, CAE 과목 활용
   - AI (Python, Keras, Pandas) -> 기계공학에서의인공지능 과목 활용
   - SW (Linux 기반 Ubuntu 20.04, OSEK/VDX 기반 ERIKA3, RT-Druid, C) -> 한국공대 AUTOSAR 과정, C++, C 과목 활용
-    
-- 2026_02_17 SW 분과 개발 도구인 ERIKA3는 GitHub 미러 저장소를 찾아 확보했지만, RT-Druid는 아카이브 파일 탐색 불가. (~함께 찾아준 GPT와 Claude에게 이 영광을..~)
-  > 2025년 부로 ERIKA 사의 오픈소스 배포 및 개발이 중단된 것으로 보여짐.. (~군대 가지 말걸~)
-  > RT-Druid 없이 OIL 파일 직접 구성하는 방식으로 기능 구현 예정.
-  > Ubuntu 20.04를 VMWare 상에서 구동하는데, RTOS의 빌드 및 실행화면 표시를 위해 KVM activate 하였음.
