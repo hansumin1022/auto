@@ -1,6 +1,7 @@
 # Project AUTO _ AI 부문
-
 <img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/ee5e04a2-6a28-428d-86e7-f01496923d41" />
+
+---
 
 > ## Project Status
 - 2023-2학기 한국공학대학교 산업AI마이크로디그리 미래차 실무 과정 수료 프로젝트에서 첫 공개
