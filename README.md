@@ -16,3 +16,5 @@
   - HW (SolidWorks, Ansys) -> 기계요소설계, FEM, CAD, CAE 과목 활용
   - AI (Python, Keras, Pandas) -> 기계공학에서의인공지능 과목 활용
   - SW (Linux 기반 Ubuntu 20.04, OSEK/VDX 기반 ERIKA3, RT-Druid, C) -> 한국공대 AUTOSAR 과정, C++, C 과목 활용
+
+ - 2026_02_22 실구동 위한 PCB 도면 설계 계획
