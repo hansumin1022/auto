@@ -9,7 +9,7 @@
 
 - 2023-2학기 명지대학교 융합프로젝트, 한국공학대학교 산업AI마이크로디그리 미래차 실무과정 수료 프로젝트 수행
   
-- 2026_02_06 이전 프로젝트 응용 및 고도화하는 <b>Project AUTO</b> 계획 수립
+- 2026_02_06 이전 프로젝트 응용 및 고도화하는 <b>Project AUTO</b> 계획 수립 (*Autonomous UAV Terminal Operations)
 
 - 2026_02_15 Project AUTO 세부 분과 정리 (HW/SW/AI)
   
