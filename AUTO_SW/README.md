@@ -12,3 +12,5 @@
   - 2025년 부로 ERIKA 사의 오픈소스 배포 및 개발이 중단된 것으로 보여짐.. (~군대 가지 말걸~)
   - RT-Druid 없이 OIL 파일 직접 구성하는 방식으로 기능 구현 예정.
   - Ubuntu 20.04를 VMWare 상에서 구동하는데, RTOS의 빌드 및 실행화면 표시를 위해 KVM activate 하였음.
+
+- 2026_02_25 한국공대 프로젝트 리뷰 과정에서 OSTask 누락 발견 (data receive event 또한 비동기 Task로 OS 관리 필요)
