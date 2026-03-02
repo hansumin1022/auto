@@ -1,6 +1,6 @@
 # Project AUTO _ SW 부문
 
-<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/cf7ec918-40c8-483a-9133-b787eaf53893" />
+<img width="1920" height="1080" alt="HSM VISION 2030 전반기 통합 프로젝트 (2023 - 2027)" src="https://github.com/user-attachments/assets/5c9a0977-5c5b-488f-bdbb-033ba73f854f" />
 
 ---
 > ## Project Status
