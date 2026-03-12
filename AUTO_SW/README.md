@@ -14,9 +14,20 @@
   - Ubuntu 20.04를 VMWare 상에서 구동하는데, RTOS의 빌드 및 실행화면 표시를 위해 KVM activate 하였음.
 
 - 2026_02_25 한국공대 프로젝트 리뷰 과정에서 OSTask 누락 발견 (data receive event 또한 비동기 Task로 OS 관리 필요)
-- SW 구조도 완성
+  
+-2026_03_08 SW 구조도 완성
   <img width="1007" height="545" alt="image" src="https://github.com/user-attachments/assets/e3ad9c6f-111b-4513-9f2f-533212f7fa63" />
 
-- 2026_03_12 Project SW file Tree 완성
+- 2026_03_10 Project SW file Tree 완성
   -> Linux 20.04 내 suminhan@ubunto/AUTOSAR_IN_ERIKA3/ 폴더 개설
   (Linux 내 구축한 VS code 이용 C 기반 소스/헤더 파일 순차 업로드 예정)
+  
+- 2026_03_10 ~/AUTOSAR_IN_ERIKA3$ 폴더 내 1차 파일 업로드 완료
+   ~/AUTOSAR_IN_ERIKA3$
+    - rte.c
+    - rte.h
+    - swc_droneheating.c
+    - swc_droneheating.h
+    - swc_landingswitch.c
+    - swc_landingswitch.h
+      이상 5개 파일 업로드 하였음.
