@@ -1,8 +1,5 @@
 # Project AUTO _ SW 부문
 
-<img width="1920" height="1080" alt="HSM VISION 2030 전반기 통합 프로젝트 (2023 - 2027)" src="https://github.com/user-attachments/assets/5c9a0977-5c5b-488f-bdbb-033ba73f854f" />
-
----
 > ## Project Status
 - 2023-2학기 한국공학대학교 산업 AI마이크로디그리 미래차 실무 과정 중 국민대 현대오토사센터에서 주관한 AUTOSAR 실습 당시 프로젝트 구성 발표
 
