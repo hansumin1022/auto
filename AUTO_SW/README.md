@@ -29,6 +29,6 @@
     - swc_landingswitch.c
     - swc_landingswitch.h
     - makefile </br>
-      이상 5개 파일로 업로드 예정.
+      이상 9개 파일로 업로드 예정.
 
-  - 2026_03_15 rte.h 파일 개발 및 주석 처리 후 깃허브 업로드 완료
+  - 2026_03_15 rte.h 및 rte.c 파일 개발 및 주석 처리 후 깃허브 업로드 완료
