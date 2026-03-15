@@ -15,18 +15,20 @@
 -2026_03_08 SW 구조도 완성
   <img width="1007" height="545" alt="image" src="https://github.com/user-attachments/assets/e3ad9c6f-111b-4513-9f2f-533212f7fa63" />
 
-- 2026_03_10 Project SW file Tree 완성
-  -> Linux 20.04 내 suminhan@ubunto/AUTOSAR_IN_ERIKA3/ 폴더 개설
+- 2026_03_10 Linux 20.04 내 suminhan@ubunto/AUTOSAR_IN_ERIKA3/ 폴더 개설
   (Linux 내 구축한 VS code 이용 C 기반 소스/헤더 파일 순차 업로드 예정)
   
-- 2026_03_10 ~/AUTOSAR_IN_ERIKA3$ 폴더 내 1차 파일 업로드 완료
+- 2026_03_10 ~/AUTOSAR_IN_ERIKA3$ 폴더 내 Project SW file Tree 완성
    ~/AUTOSAR_IN_ERIKA3$
+    - conf.oil
+    - main.c
     - rte.c
     - rte.h
     - swc_droneheating.c
     - swc_droneheating.h
     - swc_landingswitch.c
-    - swc_landingswitch.h </br>
-      이상 5개 파일 업로드 하였음.
+    - swc_landingswitch.h
+    - makefile </br>
+      이상 5개 파일로 업로드 예정.
 
-  - 2026_03_15 rte.h 파일 수정 및 주석 처리 후 깃허브 업로드 완료
+  - 2026_03_15 rte.h 파일 개발 및 주석 처리 후 깃허브 업로드 완료
