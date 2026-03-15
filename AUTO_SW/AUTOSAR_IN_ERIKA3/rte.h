@@ -1,12 +1,6 @@
-/* rte.h
- * Runtime Environment (RTE) - Sender/Receiver 인터페이스 */
-
 #ifndef RTE_H
 #define RTE_H
 
-/* --------------------------------------------------------
- * RTE 데이터 구조체 (센서 데이터 모음)
- * -------------------------------------------------------- */
 typedef struct {
 
     // [HC-SR04 초음파 센서]
@@ -19,7 +13,7 @@ typedef struct {
     float         battery_remaining; // 남은 용량 (mAh) (전체용량 - 소비된용량)
     unsigned char battery_percent;   // 잔량 % (남은용량/전체용량 × 100)
 
-    // [DS18B20 #2 - 외부 기온 전용]
+    // [DS18B20 #2 - 외부 온도용]
     float         ambient_temp;      // 외부 온도 (°C)
 
     // 데이터 유효 여부 (Rte_Write() 호출 시 1로 설정, Rte_Read() 호출 후 0으로 초기화.)
