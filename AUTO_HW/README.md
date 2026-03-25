@@ -1,7 +1,6 @@
 # Project AUTO _ HardWare 부문
 
-<img width="1026" height="572" alt="image" src="https://github.com/user-attachments/assets/14169a72-9e3d-4c97-b65b-1858fdb3071f" />
-
+<img width="1029" height="582" alt="image" src="https://github.com/user-attachments/assets/1d532b45-2517-4bc1-a520-04ea4fb00341" />
 
 ---
 
