@@ -39,6 +39,6 @@
   - 2026_03_23 swc_landingswitch.h 및 swc_landingswitch.c 파일 개발 및 주석 처리 후 깃허브 업로드 완료
     <img width="791" height="55" alt="image" src="https://github.com/user-attachments/assets/04fbbf67-6926-425c-864e-f296b7848947" />
   * 현재는 SW 테스트를 위해 스텁을 통한 시뮬레이션이 가능하도록 설정된 상태임. HAL 활용해 실제 HW 동작 가능
-  - 2026_03_26 conf.oil 파일 개발 및 주석 처리 후 깃허브 업로드 완료
+  - 2026_03_26 conf.oil 파일 개발 및 주석 처리 후 깃허브 업로드 완료, makefile은 claude로 제작 및 업로드 완료
 
 
