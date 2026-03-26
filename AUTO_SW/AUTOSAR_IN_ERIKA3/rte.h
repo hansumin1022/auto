@@ -19,7 +19,7 @@ typedef struct {
     // 데이터 유효 여부 (Rte_Write() 호출 시 1로 설정, Rte_Read() 호출 후 0으로 초기화.)
     unsigned char data_valid;        // 1: 갱신 ㅇㅇ, 0: 갱신 ㄴㄴ
 
-} } Rte_DataType_LandingStatus;
+} Rte_DataType_LandingStatus;
 
 
 void Rte_Init(void); // 버퍼 초기화.
