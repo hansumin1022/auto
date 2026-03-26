@@ -19,3 +19,4 @@
   - SW (Linux 기반 Ubuntu 20.04, OSEK/VDX 기반 ERIKA3, RT-Druid, C) -> 한국공대 AUTOSAR 과정, C++, C 과목 활용
 
  - 2026_02_22 실구동 위한 PCB 도면 설계 계획
+ - 2026_03_30 SW 부문 개발 완료
