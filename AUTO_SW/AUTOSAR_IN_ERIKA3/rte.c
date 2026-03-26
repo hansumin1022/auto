@@ -6,11 +6,15 @@ cat > ~/ AUTOSAR_IN_ERIKA3 / rte.c << 'EOF'
 
 #ifdef SIMULATION_MODE // 시뮬레이션 모드 (Ubuntu VM gcc용)
 
-  // 시뮬레이션용 SetEvent 스텁 (동작만 출력 예정)
-    static void Sim_SetEvent(void)
+extern int sim_event_flag;
+
+// 시뮬레이션용 SetEvent 스텁 (동작만 출력 예정)
+
+static void Sim_SetEvent(void)
 {
+    sim_event_flag = 1;
     printf("[RTE] SetEvent(OsTask_DroneHeating, "
-        "Ev_DataReceive) 호출\n");
+           "Ev_DataReceive) 호출\n");
     printf("[RTE] → OsTask_DroneHeating 활성화 완\n");
 }
 
