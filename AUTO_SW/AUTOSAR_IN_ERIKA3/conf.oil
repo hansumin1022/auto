@@ -1,0 +1,105 @@
+cat > ~/AUTOSAR_IN_ERIKA3/conf.oil << 'EOF'
+
+/*  OIL (OSEK Implementation Language) : OSEK/VDX 표준에서 OS 객체를 정의하는 언어.
+ * (Task, Alarm, Event, Counter 등 설정)
+
+ * OS 객체 정의
+ * COUNTER : SystemTimer     - 시스템 틱 카운터 (1tick = 1ms)
+ * ALARM   : OsAlarm_LandingSwitch - 1초마다 Task 활성화
+ * EVENT   : Ev_DataReceive  - DroneHeating Task 깨우는 신호
+ * TASK    : OsTask_LandingSwitch  - 주기 Basic Task
+ * TASK    : OsTask_DroneHeating   - 비주기 Extended Task
+ */
+
+CPU mySystem {
+
+    OS myOs {
+        EE_OPT = "OS_EE_APPL_BUILD_DEBUG";
+        EE_OPT = "OS_EE_BUILD_DEBUG";
+
+        USERESSCHEDULER = FALSE;
+
+        CPU_DATA = X86_64 {
+            MULTI_STACK = TRUE;
+            COMPILER    = GCC;
+        };
+
+        KERNEL_TYPE = OSEK {
+            CLASS = BCC2; /* Basic + Extended Task 혼용 */
+            RQ    = MR;
+        };
+    };
+
+// COUNTER: SystemTimer (1 tick = 1ms)
+
+    COUNTER SystemTimer {
+        MINCYCLE        = 1;
+        MAXALLOWEDVALUE = 65535;
+        TICKSPERBASE    = 1;      /* 1tick = 1ms            */
+        TYPE            = HARDWARE {
+            SYSTEM_TIMER = TRUE;
+            PRIORITY     = 1;
+        };
+    };
+
+    // ALARM: OsAlarm_LandingSwitch
+
+    ALARM OsAlarm_LandingSwitch {
+        COUNTER   = SystemTimer;
+        ACTION    = ACTIVATETASK {
+            TASK  = OsTask_LandingSwitch;
+        };
+        AUTOSTART = TRUE {
+            ALARMTIME  = 1000;  // 첫 실행: 1초 후
+            CYCLETIME  = 1000;  // 1초마다 반복
+            APPMODE    = OSDEFAULTAPPMODE;
+        };
+    };
+
+    // EVENT: Ev_DataReceive
+
+    EVENT Ev_DataReceive {
+        MASK = AUTO;
+    };
+
+    /* TASK: OsTask_LandingSwitch (주기 Basic Task)
+     *
+     * [설정값]
+     * PRIORITY   = 2 : DroneHeating(1)보다 높은 우선순위  → 1초 주기 실행이 항상 먼저 처리
+     * ACTIVATION = 1 : 동시에 1번만 활성화 가능
+     * SCHEDULE   = FULL : 선점형 스케줄링 허용
+     * AUTOSTART  = FALSE : 알람에 의해서만 시작
+     * STACK      = SHARED : Basic Task는 공유 스택 사용 */
+
+    TASK OsTask_LandingSwitch {
+        PRIORITY   = 2;
+        ACTIVATION = 1;
+        SCHEDULE   = FULL;
+        AUTOSTART  = FALSE;
+        STACK      = SHARED;
+        EVENT      = NONE;
+    };
+
+    // TASK: OsTask_DroneHeating (비주기 Extended Task)
+     *
+     * [설정값]
+     * PRIORITY   = 1 : LandingSwitch(2)보다 낮은 우선순위
+     * AUTOSTART  = TRUE : 부팅 시 자동 시작 후 대기
+     * STACK      = PRIVATE : Extended Task는 독립 스택 필수 (WaitEvent()로 블록될 때 스택 상태를 보존 위함)
+     * EVENT      = Ev_DataReceive : 이 이벤트만 대기  */
+
+    TASK OsTask_DroneHeating {
+        PRIORITY   = 1;
+        ACTIVATION = 1;
+        SCHEDULE   = FULL;
+        AUTOSTART  = TRUE {
+            APPMODE = OSDEFAULTAPPMODE;
+        };
+        STACK      = PRIVATE {
+            SYS_SIZE = 512;  // 독립 스택 크기
+        };
+        EVENT      = Ev_DataReceive;
+    };
+
+};
+EOF
