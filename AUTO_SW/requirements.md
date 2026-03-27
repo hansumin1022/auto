@@ -1,8 +1,10 @@
-# 개발 요구사항
+# ISO/IEC/IEEE 29119에 의거한 SW 개발 및 테스팅 관련 문서
+
+### 개발 요구사항
 
 - 
 
-# 시뮬레이션 동작 결과
+### 시뮬레이션 동작 결과
 ```
 suminhan@ubuntu:~/AUTOSAR_IN_ERIKA3$ make sim
 gcc -Wall -Wextra -g -DSIMULATION_MODE main.c rte.c swc_landingswitch.c swc_droneheating.c -o drone_system_sim -lrt
@@ -346,3 +348,6 @@ gcc -Wall -Wextra -g -DSIMULATION_MODE main.c rte.c swc_landingswitch.c swc_dron
  시뮬레이션 종료 (10 사이클 완료)
 ========================================
 ```
+
+### Test
+
