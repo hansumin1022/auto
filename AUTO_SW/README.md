@@ -2,6 +2,11 @@
 
 <img width="1027" height="573" alt="image" src="https://github.com/user-attachments/assets/5695f2e6-18a9-4b89-801e-81660b129723" />
 
+1. SW 요구사항 도출 (2026_03_27)
+2. SW 구조도 도출 (2026_03_08)
+3. SW 로직 테스트 (2026_03_27)
+4. ERIKA3 환경 SW 구축
+5. SW 최종 빌드
 
 > ## Project Status
 - 2023-2학기 한국공학대학교 산업 AI마이크로디그리 미래차 실무 과정 중 국민대 현대오토사센터에서 주관한 AUTOSAR 실습 당시 프로젝트 구성 발표
@@ -21,7 +26,7 @@
 - 2026_03_10 Linux 20.04 내 suminhan@ubunto/AUTOSAR_IN_ERIKA3/ 폴더 개설
   (Linux 내 구축한 VS code 이용 C 기반 소스/헤더 파일 순차 업로드 예정)
   
-- 2026_03_10 ~/AUTOSAR_IN_ERIKA3$ 폴더 내 Project SW file Tree 완성
+- 2026_03_10 ~/AUTOSAR_IN_ERIKA3$ 폴더 내 Project SW Logic Simulation file Tree 완성
    ~/AUTOSAR_IN_ERIKA3$
     - conf.oil
     - main.c
@@ -41,6 +46,7 @@
   * 현재는 SW 테스트를 위해 스텁을 통한 시뮬레이션이 가능하도록 설정된 상태임. HAL 활용해 실제 HW 동작 가능
   - 2026_03_26 conf.oil 파일 개발 및 주석 처리 후 깃허브 업로드 완료, makefile은 claude로 제작 및 업로드 완료 (makefile 탭 오류로 수정)
   - 2026_03_27 main.c 파일 개발 및 주석 처리 후 깃허브 업로드 완료. 시뮬레이션 실행 에러...
-### 2026_03_30 모든 코드 개발 완료, 시뮬레이션 테스트 정상 작동 확인
-- 정상 작동된 결과 화면은 requirements.md 파일에 요구사항 및 테스트 결과와 함께 정리할 예정 (~26/04)
+### 2026_03_30 모든 시뮬레이션 코드 개발 완료, 시뮬레이션 테스트 정상 작동 확인
+- 정상 작동된 시뮬레이션 결과 화면은 requirements.md 파일에 요구사항 및 테스트 결과와 함께 정리할 예정 (~26/04)
+### - 2026_03_28 ERIKA3 기반 SW 개발 시작
 
