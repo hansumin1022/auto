@@ -1,13 +1,17 @@
 # Project AUTO _ SW 부문
 
 <img width="1027" height="573" alt="image" src="https://github.com/user-attachments/assets/5695f2e6-18a9-4b89-801e-81660b129723" />
-<BR>
+
+---
+
+### 개발 단계
 1. SW 요구사항 도출 (2026_03_27)
 2. SW 구조도 도출 (2026_03_08)
 3. SW 로직 테스트 (2026_03_27)
 4. ERIKA3 환경 SW 구축
 5. SW 최종 빌드
-<BR>
+
+---
 
 > ## Project Status
 - 2023-2학기 한국공학대학교 산업 AI마이크로디그리 미래차 실무 과정 중 국민대 현대오토사센터에서 주관한 AUTOSAR 실습 당시 프로젝트 구성 발표
