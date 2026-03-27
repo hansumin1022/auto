@@ -1,10 +1,29 @@
-# ISO/IEC/IEEE 29119에 의거한 SW 개발 및 테스팅 관련 문서
+# ISO 25010 에 의거한 SW 개발 및 테스팅 관련 문서
 
 ### 개발 요구사항
+1. 기능적합성 (Functional Suitability)
+- FS-01. 시스템은 1초 주기로 HC-SR04를 통해 거리를 측정하고 드론 감지 여부를 판단해야 한다.
+- FS-02. 시스템은 드론 감지 시 LED를 점등하고 미감지 시 소등해야 한다.
+- FS-03. 시스템은 드론 감지 시 금속판 온도를 18~22°C로 유지해야 한다.
+- FS-04. 시스템은 드론 감지 시 무선충전 패드에 전원을 공급해야 한다.
+- FS-05. 시스템은 1초 주기로 배터리 전압, 전류, 잔량(mAh), 잔량(%)을 측정해야 한다.
+- FS-06. 시스템은 1초 주기로 외부 기온을 측정하고 저장해야 한다.
+- FS-07. 거리 측정값이 7cm 미만일 경우에만 drone_detected = 1로 설정해야 한다.
+- FS-08. 금속판 온도 18°C 미만 시 MOSFET CH1,
+       CH2가 ON되어야 한다.
+- FS-09. 금속판 온도 22°C 초과 시 MOSFET CH1, CH2가 OFF되어야 한다.
+- FS-10. 배터리 잔량(%) = 남은용량 / 전체용량 × 100 공식으로 계산되어야 한다.
+- FS-11. SWC 간 데이터 전달은 반드시 RTE를 통해서만 이루어져야 한다.
+- FS-12. 드론 미감지 시 발열 및 충전 동작이 발생하지 않아야 한다.
 
-- 
+2. 성능효율성 (Performance Efficiency)
+- PE-01. OsTask_LandingSwitch는 1초(±10ms) 주기로 실행되어야 한다.
+- PE-02. 드론 감지 후 MOSFET 및 충전 패드 제어까지의 응답시간은 1초 이내여야 한다.
+- PE-03. RE_LandingSwitch의 단일 실행 시간은 100ms를 초과하지 않아야 한다.
 
-### 시뮬레이션 동작 결과
+
+### SW 로직 검증 시뮬레이션 동작 결과
+- SW 로직의 정상 작동을 검증하기 위해 실제 ERIKA3 환경임을 가정하고 각 함수로 역할을 모방해 테스트하였음.
 ```
 suminhan@ubuntu:~/AUTOSAR_IN_ERIKA3$ make sim
 gcc -Wall -Wextra -g -DSIMULATION_MODE main.c rte.c swc_landingswitch.c swc_droneheating.c -o drone_system_sim -lrt
@@ -355,6 +374,4 @@ gcc -Wall -Wextra -g -DSIMULATION_MODE main.c rte.c swc_landingswitch.c swc_dron
 |7|23.5°C|22°C 초과 → MOSFET CH1, CH2 OFF (가열 중단)|
 |8~10|23.0 → 22.5 → 22.0°C|아직 22°C 이상 → OFF 상태 유지<br>무선충전 패드 ON 유지|
 
-
-### Test
 
