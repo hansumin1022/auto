@@ -1,9 +1,19 @@
 # SW 테스팅
-- 실제 구동을 위한 HW의 부재로 인한 이하 SW의 로직을 검증용 시뮬레이션의 테스트 기법은 아래와 같음.
+- 실제 구동을 위한 HW의 부재로 인한 이하 SW의 로직을 검증용 시뮬레이션의 테스트 환경은 아래와 같음.
 
-* 테스트 레벨 관점: 단위 테스트 (Unit Test)
-* 테스트 기법 관점: 화이트 박스 테스트
-* Software In the Loop
+|항목| 내용|
+|--|----|
+|테스트 방법| SIL (Software In the Loop) |
+|실행환경| Ubuntu 20.04 LTS (VMware) |
+|빌드 도구| gcc 9.4.0, make | 
+|빌드 옵션| -Wall -Wextra -g -DSIMULATION_MODE |
+|시뮬레이션 사이클 주기| 1 sec |
+|HW 대체 방법| 스텁(Stub) 함수로 센서 및 GPIO 대체 |
+|테스트 케이스 수| 18개 |
+|테스트 결과| 100% PASS |
+
+
+
   
 
 ### SW 로직 검증 시뮬레이션 동작 결과 (Software In the Loop)
