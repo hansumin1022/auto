@@ -3,9 +3,10 @@
 
 * 테스트 레벨 관점: 단위 테스트 (Unit Test)
 * 테스트 기법 관점: 화이트 박스 테스트
+* Software In the Loop
+  
 
-
-### SW 로직 검증 시뮬레이션 동작 결과
+### SW 로직 검증 시뮬레이션 동작 결과 (Software In the Loop)
 - SW 로직의 정상 작동을 검증하기 위해 실제 ERIKA3 환경임을 가정하고 각 함수로 역할을 모방해 테스트하였음.
 ```
 suminhan@ubuntu:~/AUTOSAR_IN_ERIKA3$ make sim
