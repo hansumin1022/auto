@@ -2,6 +2,9 @@
 #### By Sumin Han
 
 ![HSM VISION 2030 전반기 통합 프로젝트 (2023 - 2027)](https://github.com/user-attachments/assets/039480d5-2e25-4b07-a318-36a2a3646230)
+<img width="1920" height="1080" alt="HSM VISION 2030 전반기 통합 프로젝트 (2023 - 2027)" src="https://github.com/user-attachments/assets/32968ece-17a9-4b3f-ae7c-4f720ca3ce37" />
+<img width="1920" height="1080" alt="HSM VISION 2030 전반기 통합 프로젝트 (2023 - 2027) (1)" src="https://github.com/user-attachments/assets/91e4308c-3654-4261-9883-23144078a3dc" />
+
 
 ---
 > ## project status
