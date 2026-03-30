@@ -1,7 +1,8 @@
 # 산림 재생 드론 지원 차량 개발 프로젝트
 #### By Sumin Han
 
-<img width="1920" height="1080" alt="HSM VISION 2030 전반기 통합 프로젝트 (2023 - 2027)" src="https://github.com/user-attachments/assets/37a572a3-9024-4e11-b18a-e275446c6f45" />
+<img width="1031" height="580" alt="image" src="https://github.com/user-attachments/assets/9baffd8d-18df-4ad1-8a15-f91caaaa45c5" />
+
 
 
 ---
