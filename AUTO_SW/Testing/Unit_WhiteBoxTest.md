@@ -366,8 +366,10 @@ gcc -Wall -Wextra -g -DSIMULATION_MODE main.c rte.c swc_landingswitch.c swc_dron
 |7|23.5°C|22°C 초과 → MOSFET CH1, CH2 OFF (가열 중단)|
 |8~10|23.0 → 22.5 → 22.0°C|아직 22°C 이상 → OFF 상태 유지<br>무선충전 패드 ON 유지|
 
+### 테스트 케이스
+
+
 <br>
 
-### 요구사항 검증
-
+### 요구사항 검증 결과
 
