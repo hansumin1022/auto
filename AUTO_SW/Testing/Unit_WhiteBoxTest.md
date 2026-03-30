@@ -14,7 +14,48 @@
 
 <br>
 
-### SW 로직 검증 시뮬레이션 동작 결과 (Software In the Loop)
+### 테스트 케이스
+* 기능 관련
+|순번|내용|입력|확인|
+|--|--|--|--|
+|TC-01|1초 주기 거리 측정|HC-SR04 스텁 5.0cm 반환|1초마다 거리 측정 로그 출력|
+|TC-02|드론 감지 판단|distance_cm = 5 (< 7cm)|drone_detected = 1 설정|
+|TC-03|드론 미감지 판단|distance_cm = 10 (≥ 7cm)|drone_detected = 0 설정|
+|TC-04|LED 점등 (감지)|drone_detected = 1|LED ON 로그 출력|
+|TC-05|LED 소등 (미감지)|drone_detected = 0|LED OFF 로그 출력|
+|TC-06|MOSFET ON (저온)|금속판 온도 14.5°C < 18°C|MOSFET CH1, CH2 ON|
+|TC-07|MOSFET 상태 유지 (범위 내)|금속판 온도 19.0~22.0°C|현재 상태 유지 (히스테리시스)|
+|TC-08|MOSFET OFF (고온)|금속판 온도 23.5°C > 22°C|MOSFET CH1, CH2 OFF|
+|TC-09|MOSFET OFF (미감지)|drone_detected = 0|MOSFET CH1, CH2 즉시 OFF|
+|TC-10|무선충전 패드 ON|drone_detected = 1|MOSFET CH3 ON|
+|TC-11|무선충전 패드 OFF|입력: drone_detected = 0|MOSFET CH3 OFF|
+|TC-12|배터리 전압 측정|INA219 스텁 3.96V 반환|battery_voltage = 3.96V|
+|TC-13|배터리 잔량 계산|전류 500mA, 주기 1초|잔량 mAh 감소 계산 정상|
+|TC-14|외부 기온 측정|DS18B20#2 스텁 -5.0°C 반환|ambient_temp = -5.0°C|
+
+<br>
+
+* RTE/OS 관련
+|순번|내용|입력|확인|
+|--|--|--|--|
+|TC-15|RTE Write/Read|Rte_Write() 후 Rte_Read() 호출|data_valid 플래그 정상 동작|
+|TC-16|SetEvent 트리거|drone_detected = 1 시 SetEvent 호출|OsTask_DroneHeating 활성화|
+|TC-17|WaitEvent 대기|이벤트 미수신 상태|Task 대기 상태 유지|
+|TC-18|10사이클 연속 동작|10회 반복 실행|오류 없이 정상 완료
+
+### 요구사항 검증 결과
+
+
+### SW 로직 검증 시뮬레이션 동작 결과 (Software In the Loop) 전문
+
+|사이클|온도|상태|
+|---|---|--------|
+|1~3|14.5 → 16.0 → 17.5°C|MOSFET CH1, CH2 ON (가열 중)<br>무선충전 패드 ON|
+|4~6|19.0 → 20.5 → 22.0°C|18~22°C 범위 → 현재 상태 유지 (히스테리시스)<br>무선충전 패드 ON 유지|
+|7|23.5°C|22°C 초과 → MOSFET CH1, CH2 OFF (가열 중단)|
+|8~10|23.0 → 22.5 → 22.0°C|아직 22°C 이상 → OFF 상태 유지<br>무선충전 패드 ON 유지|
+
+
 - SW 로직의 정상 작동을 검증하기 위해 실제 ERIKA3 환경임을 가정하고 각 함수로 역할을 모방해 테스트하였음.
 ```
 suminhan@ubuntu:~/AUTOSAR_IN_ERIKA3$ make sim
@@ -359,17 +400,4 @@ gcc -Wall -Wextra -g -DSIMULATION_MODE main.c rte.c swc_landingswitch.c swc_dron
  시뮬레이션 종료 (10 사이클 완료)
 ========================================
 ```
-|사이클|온도|상태|
-|---|---|--------|
-|1~3|14.5 → 16.0 → 17.5°C|MOSFET CH1, CH2 ON (가열 중)<br>무선충전 패드 ON|
-|4~6|19.0 → 20.5 → 22.0°C|18~22°C 범위 → 현재 상태 유지 (히스테리시스)<br>무선충전 패드 ON 유지|
-|7|23.5°C|22°C 초과 → MOSFET CH1, CH2 OFF (가열 중단)|
-|8~10|23.0 → 22.5 → 22.0°C|아직 22°C 이상 → OFF 상태 유지<br>무선충전 패드 ON 유지|
-
-### 테스트 케이스
-
-
-<br>
-
-### 요구사항 검증 결과
 
