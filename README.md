@@ -5,8 +5,7 @@
 <img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/fb123880-4b41-49d9-a45b-e5938f1529e6" />
 <img width="1920" height="1080" alt="HSM VISION 2030 전반기 통합 프로젝트 (2023 - 2027) (3)" src="https://github.com/user-attachments/assets/feb51545-f769-4f0a-af6b-cca5b9c4f058" />
 <img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/b008ec90-2973-436f-919b-9a76f3ccf98d" />
-<img width="1920" height="1080" alt="HSM VISION 2030 전반기 통합 프로젝트 (2023 - 2027) (1)" src="https://github.com/user-attachments/assets/91e4308c-3654-4261-9883-23144078a3dc"/>
-
+<img width="1920" height="1080" alt="HSM VISION 2030 전반기 통합 프로젝트 (2023 - 2027) (4)" src="https://github.com/user-attachments/assets/cc3c4249-5e27-41db-a592-3f3e94515372" />
 
 ---
 > ## project status
