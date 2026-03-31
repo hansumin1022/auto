@@ -3,7 +3,7 @@
 
 ![HSM VISION 2030 전반기 통합 프로젝트 (2023 - 2027)](https://github.com/user-attachments/assets/039480d5-2e25-4b07-a318-36a2a3646230)
 <img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/fb123880-4b41-49d9-a45b-e5938f1529e6" />
-<img width="1920" height="1080" alt="3" src="https://github.com/user-attachments/assets/7297a86c-87ee-4fd4-bd5b-b61f1a9abde0" />
+<img width="1920" height="1080" alt="HSM VISION 2030 전반기 통합 프로젝트 (2023 - 2027) (3)" src="https://github.com/user-attachments/assets/feb51545-f769-4f0a-af6b-cca5b9c4f058" />
 <img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/b008ec90-2973-436f-919b-9a76f3ccf98d" />
 <img width="1920" height="1080" alt="HSM VISION 2030 전반기 통합 프로젝트 (2023 - 2027) (1)" src="https://github.com/user-attachments/assets/91e4308c-3654-4261-9883-23144078a3dc"/>
 
