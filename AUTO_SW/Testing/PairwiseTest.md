@@ -1,5 +1,8 @@
 # PICT 이용 페이와이즈 테스트 케이스 도출
 
+* PairWise Test
+> 모든 변수의 쌍이 최소 1번씩은 등장하도록 한다.
+
 ### PICT 설치
 ```
 sudo apt install -y cmake g++
