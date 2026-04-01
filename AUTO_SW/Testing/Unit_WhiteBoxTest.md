@@ -17,22 +17,22 @@
 ### 테스트 케이스
 * 기능 관련
 
-|순번|내용|입력|확인|
-|--|--|--|--|
-|TC-01|1초 주기 거리 측정|HC-SR04 스텁 5.0cm 반환|1초마다 거리 측정 로그 출력|
-|TC-02|드론 감지 판단|distance_cm = 5 (< 7cm)|drone_detected = 1 설정|
-|TC-03|드론 미감지 판단|distance_cm = 10 (≥ 7cm)|drone_detected = 0 설정|
-|TC-04|LED 점등 (감지)|drone_detected = 1|LED ON 로그 출력|
-|TC-05|LED 소등 (미감지)|drone_detected = 0|LED OFF 로그 출력|
-|TC-06|MOSFET ON (저온)|금속판 온도 14.5°C < 18°C|MOSFET CH1, CH2 ON|
-|TC-07|MOSFET 상태 유지 (범위 내)|금속판 온도 19.0~22.0°C|현재 상태 유지 (히스테리시스)|
-|TC-08|MOSFET OFF (고온)|금속판 온도 23.5°C > 22°C|MOSFET CH1, CH2 OFF|
-|TC-09|MOSFET OFF (미감지)|drone_detected = 0|MOSFET CH1, CH2 즉시 OFF|
-|TC-10|무선충전 패드 ON|drone_detected = 1|MOSFET CH3 ON|
-|TC-11|무선충전 패드 OFF|입력: drone_detected = 0|MOSFET CH3 OFF|
-|TC-12|배터리 전압 측정|INA219 스텁 3.96V 반환|battery_voltage = 3.96V|
-|TC-13|배터리 잔량 계산|전류 500mA, 주기 1초|잔량 mAh 감소 계산 정상|
-|TC-14|외부 기온 측정|DS18B20#2 스텁 -5.0°C 반환|ambient_temp = -5.0°C|
+|순번|내용|입력|확인|도출 방법|
+|--|--|--|--|--|
+|TC-01|1초 주기 거리 측정|HC-SR04 스텁 5.0cm 반환|1초마다 거리 측정 로그 출력| 요구사항 기반 |
+|TC-02|드론 감지 판단|distance_cm = 5 (< 7cm)|drone_detected = 1 설정| 동등 분할 |
+|TC-03|드론 미감지 판단|distance_cm = 10 (≥ 7cm)|drone_detected = 0 설정| 동등 분할 |
+|TC-04|LED 점등 (감지)|drone_detected = 1|LED ON 로그 출력| 동등 분할 |
+|TC-05|LED 소등 (미감지)|drone_detected = 0|LED OFF 로그 출력| 동등 분할 |
+|TC-06|MOSFET ON (저온)|금속판 온도 14.5°C < 18°C|MOSFET CH1, CH2 ON| 동등 분할 + 경곗값 |
+|TC-07|MOSFET 상태 유지 (범위 내)|금속판 온도 19.0~22.0°C|현재 상태 유지 (히스테리시스)| 동등 분할 + 경곗값 |
+|TC-08|MOSFET OFF (고온)|금속판 온도 23.5°C > 22°C|MOSFET CH1, CH2 OFF| 동등 분할 + 경곗값 |
+|TC-09|MOSFET OFF (미감지)|drone_detected = 0|MOSFET CH1, CH2 즉시 OFF| 동등 분할 |
+|TC-10|무선충전 패드 ON|drone_detected = 1|MOSFET CH3 ON| 동등 분할 |
+|TC-11|무선충전 패드 OFF|입력: drone_detected = 0|MOSFET CH3 OFF| 동등 분할 |
+|TC-12|배터리 전압 측정|INA219 스텁 3.96V 반환|battery_voltage = 3.96V| 요구사항 기반 |
+|TC-13|배터리 잔량 계산|전류 500mA, 주기 1초|잔량 mAh 감소 계산 정상| 요구사항 기반 |
+|TC-14|외부 기온 측정|DS18B20#2 스텁 -5.0°C 반환|ambient_temp = -5.0°C| 요구사항 기반 |
 
 <br>
 
@@ -40,10 +40,10 @@
   
 |순번|내용|입력|확인|
 |--|--|--|--|
-|TC-15|RTE Write/Read|Rte_Write() 후 Rte_Read() 호출|data_valid 플래그 정상 동작|
-|TC-16|SetEvent 트리거|drone_detected = 1 시 SetEvent 호출|OsTask_DroneHeating 활성화|
-|TC-17|WaitEvent 대기|이벤트 미수신 상태|Task 대기 상태 유지|
-|TC-18|10사이클 연속 동작|10회 반복 실행|오류 없이 정상 완료
+|TC-15|RTE Write/Read|Rte_Write() 후 Rte_Read() 호출|data_valid 플래그 정상 동작| 상태 기반 UI 테스트 |
+|TC-16|SetEvent 트리거|drone_detected = 1 시 SetEvent 호출|OsTask_DroneHeating 활성화| 상태 기반 |
+|TC-17|WaitEvent 대기|이벤트 미수신 상태|Task 대기 상태 유지| 상태 기반 |
+|TC-18|10사이클 연속 동작|10회 반복 실행|오류 없이 정상 완료| 반복 |
 
 ### 요구사항 검증 결과
 
