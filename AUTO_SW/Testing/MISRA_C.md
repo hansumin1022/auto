@@ -14,3 +14,6 @@
 | Rule 12.1 | 연산자 우선순위 불명확 | swc_landingswitch.c | 권고 |
 | Rule 14.4 | 비boolean 논리 연산 | swc_droneheating.c | 필수 |
 | Rule 2.2 | // 주석 사용 | swc_droneheating.c | 권고 |
+
+
+### Rule 2.2 | 주석 사용
