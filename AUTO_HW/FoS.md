@@ -7,5 +7,5 @@
 - 차량용 루프 캐리어
 
 > 차량 루프는 차량 중량의 1.5배 이상을 견딜 수 있도록 설계되어야 한다. (2.5배 이상을 권고)
-> Z. A. R. Rizvi, 2008, Roof Strength Requirement for Vehicles Involved in Rollover Crash (SAE 2008-01-0510)
+> <br> Z. A. R. Rizvi, 2008, Roof Strength Requirement for Vehicles Involved in Rollover Crash (SAE 2008-01-0510)
 
