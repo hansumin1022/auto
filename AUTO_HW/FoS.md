@@ -6,4 +6,6 @@
 - 차량용 루프랙
 - 차량용 루프 캐리어
 
-  -> 위 두 제품의 경우 ISO 11154 에 의거한 충돌/하중 시험에 의해
+> 차량 루프는 차량 중량의 1.5배 이상을 견딜 수 있도록 설계되어야 한다. (2.5배 이상을 권고)
+> Z. A. R. Rizvi, 2008, Roof Strength Requirement for Vehicles Involved in Rollover Crash (SAE 2008-01-0510)
+
