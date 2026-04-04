@@ -3,7 +3,7 @@
 | 규칙 번호         | 위반 내용                                                       | 위반 예시 / 함수                                                       | 위반 파일                                                  | 심각도 |
 | ------------- | ----------------------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------ | ------- |
 | Rule 21.6     | 표준 입출력 함수(<stdio.h>)는 사용하지 않아야 한다                           | #include <stdio.h>, printf()                                     | rte.c, swc_landingswitch.c, swc_droneheating.c, main.c | 필수  |
-| Rule 21.3     | 동적 메모리 할당 및 해제 함수(<string.h> memset/memcpy 포함)는 사용하지 않아야 한다 | memset(), memcpy()                                               | rte.c                                                  | 필수  |
+| Rule 21.3     | 동적 메모리 할당 및 해제 함수 금지 (<string.h> memset/memcpy 포함) | memset(), memcpy()                                               | rte.c                                                  | 필수  |
 | Rule 15.5     | 함수는 단일 출구(return)만 가져야 한다                                   | 함수 중간 return 사용                                                  | swc_droneheating.c, main.c                             | 필수  |
 | Rule 14.4     | if/while/for 조건식은 반드시 boolean 타입이어야 한다                      | if(sim_mosfet_ch1 && sim_mosfet_ch2)                             | swc_droneheating.c                                     | 필수  |
 | Rule 10.4     | 복합 표현식에서 양쪽 피연산자는 동일한 타입이어야 한다                              | float ↔ unsigned int 비교                                          | swc_droneheating.c, swc_landingswitch.c                | 필수  |
