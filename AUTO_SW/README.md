@@ -1,9 +1,5 @@
 # Project AUTO _ SW 부문
 
-<img width="1920" height="680" alt="Project AUTO" src="https://github.com/user-attachments/assets/268ff922-d634-4fd7-9849-e4ab29a71e60" />
-
----
-
 ### 개발 단계
 1. SW 요구사항 도출 (2026_03_27)
 2. SW 구조도 도출 (2026_03_08)
