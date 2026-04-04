@@ -1,6 +1,6 @@
 # Project AUTO _ SW 부문
 
-<img width="1006" height="374" alt="image" src="https://github.com/user-attachments/assets/4a48ec95-9d75-4a92-a24e-809840695441" />
+<img width="1920" height="1080" alt="Project AUTO" src="https://github.com/user-attachments/assets/9e59e77b-98bd-4912-8541-7e2bc65adaff" />
 
 ---
 
