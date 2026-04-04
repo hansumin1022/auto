@@ -1,11 +1,11 @@
-### SW Flow Chart
+# SW Flow Chart
 
 <img width="1920" height="1080" alt="7" src="https://github.com/user-attachments/assets/42351e50-eae9-491b-9122-77badf8a6024" />
 
 
-### ISO/IEC 25010 상 품질 주특성에 의거한 SW 개발 요구사항 정의
+# ISO/IEC 25010 상 품질 주특성에 의거한 SW 개발 요구사항 정의
 
-<img width="1920" height="1080" alt="8" src="https://github.com/user-attachments/assets/e7878e3f-8bcf-45a0-bc97-340d3c0ec680" />
+<img width="1920" height="1080" alt="Project AUTO (1)" src="https://github.com/user-attachments/assets/1b1c0b8e-d809-45c8-a97b-72ead411e83a" />
 
 
 |주특성|내용|
