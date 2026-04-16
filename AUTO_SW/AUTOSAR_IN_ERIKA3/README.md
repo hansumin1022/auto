@@ -6,9 +6,9 @@
    > 실 구동 시 OSEK/VDX OS (ERIKA3) 를 사용할 수 있도록 버전을 분리하였음. (#ifdef SIMULATION_MODE 와 #else로 분기)
 
 ### ERIKA3 개발 단계
-SW 요구사항 도출 (2026_03_27)
-SW 구조도 도출 (2026_03_08)
-SW 로직 테스트 (2026_03_27)
+1. SW 요구사항 도출 (2026_03_27)
+2. SW 구조도 도출 (2026_03_08)
+3. SW 로직 테스트 (2026_03_27)
 
 <img width="1920" height="1080" alt="7" src="https://github.com/user-attachments/assets/098ba995-601e-433c-baf8-2924bfec7f1f" />
 
