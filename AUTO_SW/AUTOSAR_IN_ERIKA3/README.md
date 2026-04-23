@@ -12,4 +12,4 @@
 
 
 <img width="1920" height="1080" alt="8" src="https://github.com/user-attachments/assets/a21f8189-03aa-42fc-8f9f-28311ecd2711" />
-
+<img width="1920" height="1080" alt="Project AUTO (3)" src="https://github.com/user-attachments/assets/792d9683-12b0-4d0c-8e2d-0321a08cfce1" />
