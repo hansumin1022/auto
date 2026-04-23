@@ -1,6 +1,8 @@
 # 안전율 결정
 ##### 2026-1학기 기계요소설계 프로젝트 (AUTO _ HW)
 
+<img width="1920" height="1080" alt="Project AUTO" src="https://github.com/user-attachments/assets/0e6b1e1f-52fa-4037-90a3-12be7fe7245d" />
+
 차량용 드론 착륙장 설계에 앞서 유관 제품 및 그 제품의 안전율 기준을 조사하였음.
 <br>
 
