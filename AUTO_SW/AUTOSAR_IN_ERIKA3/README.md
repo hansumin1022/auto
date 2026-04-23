@@ -10,7 +10,6 @@
 2. SW 구조도 도출 (2026_03_08)
 3. SW 로직 테스트 (2026_03_27)
 
-<img width="1920" height="1080" alt="7" src="https://github.com/user-attachments/assets/098ba995-601e-433c-baf8-2924bfec7f1f" />
 
 <img width="1920" height="1080" alt="8" src="https://github.com/user-attachments/assets/a21f8189-03aa-42fc-8f9f-28311ecd2711" />
 
