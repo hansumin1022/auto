@@ -10,6 +10,8 @@
 
 <br>
 
+<img width="1920" height="1080" alt="Project AUTO (2)" src="https://github.com/user-attachments/assets/d2ddefa2-4d37-4df0-b1e8-71927f977ce8" />
+
 ---
 
 > ## Project Status
