@@ -5,10 +5,6 @@
 2. SW 구조도 도출 (2026_03_08)
 3. SW 로직 테스트 (2026_03_27)
 
-### Trampoline posix 개발 단계
-1. ubuntu 환경 설정 (2026_04)
-
-<br>
 
 <img width="1920" height="1080" alt="Project AUTO (2)" src="https://github.com/user-attachments/assets/d2ddefa2-4d37-4df0-b1e8-71927f977ce8" />
 
@@ -55,4 +51,3 @@
   - 정상 작동된 시뮬레이션 결과 화면은 requirements.md 파일에 요구사항 및 테스트 결과와 함께 정리할 예정 (~26/04)
   - 2026_04_16 명지대학교 스마트자동차 실험실 내에 설치된 MATLAB Simulink를 이용해 위 다이어그램 코드를 생성해보고 싶었지만 R2016a 버전은 AUTOSAR도, Embedded Coder도 지원하지 않는다.
   - 한국공대는 학번을 넣으면 자동으로 개인 라이선스가 지급되던데 우리는 학교에서만 쓸 수 있으면서 버전도 2016이다.. 나도 시뮬링크 써보고 싶다아아아아!
-  - 2026_04_17 Trampoline posix 라는 OSEK/VDX 기반 OS 발견. ERIKA3를 대체할 수 있지 않을까..
