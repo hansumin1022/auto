@@ -5,7 +5,6 @@
 <img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/fb123880-4b41-49d9-a45b-e5938f1529e6" />
 <img width="1920" height="1080" alt="HSM VISION 2030 전반기 통합 프로젝트 (2023 - 2027) (3)" src="https://github.com/user-attachments/assets/feb51545-f769-4f0a-af6b-cca5b9c4f058" />
 <img width="1920" height="1080" alt="4" src="https://github.com/user-attachments/assets/b008ec90-2973-436f-919b-9a76f3ccf98d" />
-<img width="1920" height="1080" alt="HSM VISION 2030 전반기 통합 프로젝트 (2023 - 2027) (4)" src="https://github.com/user-attachments/assets/cc3c4249-5e27-41db-a592-3f3e94515372" />
 
 ---
 > ## project status
@@ -23,5 +22,3 @@
  - 2026_02_22 실구동 위한 PCB 도면 설계 계획
  - 2026_03_30 SW 부문 개발 완료, 검증(Test) 시작
  - 2026_04_05 SW 검증 (Test) 종료.
- - 2026_04_07 HW 개발 시작, 안전율 설정부터 시작.
- - 2026_04_16 SW 재개발 계획 (ERIKA3 가 아닌 다른 OSEK/VDX 기반 OS 사용)
